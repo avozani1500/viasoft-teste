@@ -10,7 +10,7 @@ public class EmailAwsBuilder {
     public EmailAwsDTO fromInputEmail(InputObjectDTO inputObjectDTO) {
         EmailAwsDTO emailAwsDTO = new EmailAwsDTO();
         emailAwsDTO.setRecipient(inputObjectDTO.getDestinatario());
-        emailAwsDTO.setRecipientName(inputObjectDTO.getDestinatario());
+        emailAwsDTO.setRecipientName(inputObjectDTO.getNomeDestinatario());
         emailAwsDTO.setSender(inputObjectDTO.getRemetente());
         emailAwsDTO.setSubject(inputObjectDTO.getAssunto());
         emailAwsDTO.setContent(inputObjectDTO.getConteudo());

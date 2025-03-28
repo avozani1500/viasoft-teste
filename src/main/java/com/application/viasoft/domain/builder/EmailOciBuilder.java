@@ -10,7 +10,7 @@ public class EmailOciBuilder {
     public EmailOciDTO fromInputEmail(InputObjectDTO inputObjectDTO) {
         EmailOciDTO emailOciDTO = new EmailOciDTO();
         emailOciDTO.setRecipientEmail(inputObjectDTO.getDestinatario());
-        emailOciDTO.setRecipientName(inputObjectDTO.getDestinatario());
+        emailOciDTO.setRecipientName(inputObjectDTO.getNomeDestinatario());
         emailOciDTO.setSenderEmail(inputObjectDTO.getRemetente());
         emailOciDTO.setSubject(inputObjectDTO.getAssunto());
         emailOciDTO.setBody(inputObjectDTO.getConteudo());
